@@ -26,7 +26,7 @@ Follow these steps to set up and run the project.
    ```bash
    git clone https://github.com/yourusername/yourprojectname.git
    cd yourprojectname
-
+   ```
    Alternatively, you can download it as a ZIP file and extract it.
 
 2. **Create a Virtual Environment**
@@ -47,35 +47,36 @@ Follow these steps to set up and run the project.
 3. **Install Depedencies**
 
     Install the required libraries specified in requirements.txt:
-    pip install -r requirements.txt
+   
+       pip install -r requirements.txt
 
-4. **Running the Program**
+5. **Running the Program**
 
     python main.py
 
     When prompted, enter the .m3u8 URL. The program will:
 
-        Download each .ts segment from the playlist.
-        Combine the segments into a single .mp4 video file.
-        Delete the temporary .ts files after combining.
+      Download each .ts segment from the playlist.
+      Combine the segments into a single .mp4 video file.
+      Delete the temporary .ts files after combining.
 
     Example of Usage:
 
-        1. Run the Program:
+   1. Run the Program:
 
             python main.py
         
-        2. Enter your .m3u8 url when prompted:
+   2. Enter your .m3u8 url when prompted:
 
             Enter the .m3u8 URL: https://example.com/path/to/video.m3u8
 
-        3. The combined video file will be saved in the output directory, ready to play.
+   3. The combined video file will be saved in the output directory, ready to play.
 
-5. **Advance and Optional**
+6. **Advance and Optional**
 
     You can update to your own path for ouput folder
 
-6. **Additional Notes**
+7. **Additional Notes**
 
     - FFmpeg Path: Ensure FFmpeg is added to your system’s PATH, so the command ffmpeg works from the terminal. If not, refer to the FFmpeg documentation to set it up.
 

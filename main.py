@@ -45,7 +45,7 @@ def extract_ts_urls_from_m3u8(m3u8_file, base_url, ts_urls_txt, gda_param=""):
             line = line.strip()
             if line and not line.startswith('#'):
                 if gda_param:
-                    line += f"{gda_param}"
+                    line += gda_param
                 ts_urls.append(base_url + line)
 
     with open(ts_urls_txt, 'w') as f:
@@ -76,8 +76,9 @@ def create_ffmpeg_file_list(ts_urls, folder):
     list_file_path = os.path.join(folder, "file_list.txt")
     with open(list_file_path, 'w') as file:
         for url in ts_urls:
-            ts_file = os.path.join(folder, sanitize_filename(url))
-            file.write(f"file '{ts_file}'\n")
+            ts_file = sanitize_filename(url)  # Get the sanitized filename
+            # Write just the filename (or the correct relative path)
+            file.write(f"file '{ts_file}'\n")  # Remove the temp_files prefix
     print(f"Created FFmpeg file list at {list_file_path}")
     return list_file_path
 

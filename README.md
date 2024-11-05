@@ -14,7 +14,7 @@ This guide provides instructions on setting up the program for beginners, includ
 
 2. **FFmpeg**: The program uses FFmpeg to combine `.ts` files into a single video. Download and install FFmpeg from [FFmpeg's official website](https://ffmpeg.org/download.html).
 
-3. **m3u8**: To find m3u8 files you should check by inspecting the website and check Network element or using add on like hls downloader, remember to download weverse m3u8, you need copy full link include _gda key
+3. **m3u8**: To find m3u8 files you should check by inspecting the website and check Network element or using add-on like hls downloader, remember to download weverse m3u8, you need copy full link include _gda key
 
 ### Step-by-Step Setup
 
@@ -24,8 +24,8 @@ Follow these steps to set up and run the project.
 
    Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/yourprojectname.git
-   cd yourprojectname
+   git clone https://github.com/GrosseMilchstrasse/weverse-io-download.git
+   cd weverse-io-download
    ```
    Alternatively, you can download it as a ZIP file and extract it.
 
